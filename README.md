@@ -1,1 +1,3 @@
-# Sample-Amazon
+# Sample-Amazon 
+
+My First Git project
