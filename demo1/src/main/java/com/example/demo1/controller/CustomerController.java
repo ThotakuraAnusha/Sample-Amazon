@@ -24,29 +24,12 @@ public class CustomerController {
       
 		System.out.println("Customer added Successfully..."+customerList);
 	}
-
-//	@RequestMapping("/name ")
-//	public List<CustomerDto> getAllCustomer()
-//	{
-//		return (CustomerDto.getAllCustomer());
-//	}
-
-//	@PostMapping("/create") 
-//    public String createProduct(@RequestBody CustomerDto c){
-//      { 
-//       customer   Service.createCustomer(c); 
-//
-//    return"Customer name Created"
-//      }
-//  @RequestMapping(method=RequestMehod,POST,value ="/customer")
-//	public void addTopic(@RequestBody Customer customer) {
-//   customerService.addCustomer(Customer);
-//  }
-//   @RequestMapping(method=RequestMehod, PUT,value ="/customer/ {id}") 
-//
-//	public void updateCustomer(@RequestBody Customer customer,@pathvariable String id) {
-//
-//			customerService.updateCustomer(id,Customer);
-//
-//}
-	}
+     @PutMapping("/update")
+ 
+    public void updateCustomer(@RequestBody CustomerDto customer) {
+    ArrayList<CustomerDto> customerList=this.customerService.updateCustomer(customer);
+    	      
+    System.out.println("Customer updated Successfully..."+customerList);
+    		}
+    	 
+     }

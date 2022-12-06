@@ -1,48 +1,26 @@
 package com.example.demo1.controller;
 
-import java.util.ArrayList;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.core.annotation.Order;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.example.demo1.dto.ProductDto;
-import com.example.demo1.service.ProductService;
+import com.example.demo1.service.OrderService;
 
 public class OrderController {
-	
-	@Autowired
-	private ProductService productService;
 
-//	@PostMapping("/create")
-//	public String createOrder(@RequestBody OrderDto o) {
-//		OrderService.createOrder(o);
-//		return "Order Created";
-//	}
+	private OrderService orderService;
 
-//	@PutMapping("/update")
-//	public OrderDto updateOrder(@RequestBody OrderDto o) {
-//		return OrderService.updateOrder(o.getOrder(), o.getOrderName());
-//	}
+	public OrderController(OrderService orderService)
+	this.orderService=orderService;
 	
-//	@PutMapping("/delete")
-//	public OrderDto deleteOrder(@RequestBody OrderDto o) {
-//		return orderService.updatePr(p.getName(), p.getPrice());
-//	}
-//
-//
-//	// Read getMapping
-//	@GetMapping("/getproduct")
-//	public ArrayList<ProductDto> getProduct() {
-//		return productService.getAllProducts();
-//	}
-//
-//	// update putMapping
-//	// ProductDtodelete deleteMapping
-//
-//}
+	System.out.println("Order added Successfully..."+orderService);
+}
+   @Order
+	@PostMapping()
+   public String placeOrder(@RequestBody Order order)
+    order.setOrderId(order);
+  
+	System.out.println("Order added Successfully..."+orderService);
 
 
 }

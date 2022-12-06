@@ -19,6 +19,12 @@ public class CustomerService {
         this.customerList.add(customerDto);
 		return  this.customerList;
 	}
+	
+	public ArrayList<CustomerDto> updateCustomer(CustomerDto customerDto) { 
+
+       customerList.update(customerDto);
+        return  this.customerList;
+	}
 
 	 
 	 
