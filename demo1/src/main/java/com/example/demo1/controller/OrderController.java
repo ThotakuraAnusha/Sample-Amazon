@@ -10,17 +10,20 @@ public class OrderController {
 
 	private OrderService orderService;
 
-	public OrderController(OrderService orderService)
+	public OrderController(OrderService orderService) {
 	this.orderService=orderService;
 	
 	System.out.println("Order added Successfully..."+orderService);
 }
-   @Order
-	@PostMapping()
-   public String placeOrder(@RequestBody Order order)
-    order.setOrderId(order);
+   
+	//@PostMapping("/update")
+   //public String placeOrder(@RequestBody Order order) {
+   // order.setOrderId();
   
-	System.out.println("Order added Successfully..."+orderService);
-
+//	System.out.println("Order added Successfully..."+orderService);
+//  
+//   }  
+//
+//
 
 }

@@ -22,7 +22,7 @@ public class ProductService {
 		return productList;
 	}
 
-	public ProductDto updatePriceFo rProduct(String productName, Integer price) {
+	public ProductDto updatePriceForProduct(String productName, Integer price) {
 		System.out.println("Inside update price method");
 		for (ProductDto productDto : productList) {
 			if (productDto.getName().equals(productName)) {

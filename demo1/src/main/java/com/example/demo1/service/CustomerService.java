@@ -22,8 +22,15 @@ public class CustomerService {
 	
 	public ArrayList<CustomerDto> updateCustomer(CustomerDto customerDto) { 
 
-       customerList.update(customerDto);
+      // customerList.update(customerDto);
         return  this.customerList;
+        
+	}
+	
+	public ArrayList<CustomerDto> DeleteCustomer(CustomerDto customerDto) { 
+
+	       //customerList.delete(customerDto);
+	        return  this.customerList;
 	}
 
 	 
