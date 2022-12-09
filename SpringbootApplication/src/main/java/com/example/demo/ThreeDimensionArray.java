@@ -1,6 +1,11 @@
 package com.example.demo;
 
+/*
+ * 1 - Program for Reading 3D array and print 3D array elements in java 8
+ */
+
 public class ThreeDimensionArray {
+
 	public void printArray(int[][][] intArray) {
 
 		System.out.println("3-d array is given below :");
@@ -12,17 +17,16 @@ public class ThreeDimensionArray {
 					System.out.println("intArray [" + i + "][" + j + "][" + z + "] = " + intArray[i][j][z]);
 	}
 
-	// here we need to write a code from reading from key board and once done it will return the 3d array;
+	// here we need to write a code from reading from key board and once done it
+	// will return the 3d array;
 	public int[][][] readArray() {
-		
+
 		int[][][] intArray = new int[3][3][3];
-		//bufferreader 
-		
+		// bufferreader
+
 		return null;
 
 	}
-
-	//// 1 - Program for Reading 3D array and print 3D array elements in java 8
 
 	public static void main(String[] args) {
 
