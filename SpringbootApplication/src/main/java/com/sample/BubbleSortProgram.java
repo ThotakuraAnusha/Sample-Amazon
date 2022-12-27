@@ -1,11 +1,11 @@
-package com.example.demo1.dao;
+package com.sample;
 
 public class BubbleSortProgram {
 
 	void bubbleSort(int arr[]) {
 		int n = arr.length;
 		//System.out.println(n);
-		String str ="Anusha Java Developer";
+		String str ="Anusha Java Developer  ";
 		System.out.println("my name length is:"+ str.length());
 		for (int i = 0; i < n - 1; i++)
 			for (int j = 0; j < n - i - 1; j++)
