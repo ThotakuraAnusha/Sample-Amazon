@@ -6,16 +6,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class ProductModal {
-	
-	 @Id 
-	 @GeneratedValue(strategy = GenerationType.AUTO) 
+public class Product {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String name;
 	private int price;
 
-	public ProductModal() {
+	public Product() {
 		super();
-
 	}
 
 	public String getName() {

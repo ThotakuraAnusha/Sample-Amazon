@@ -2,11 +2,9 @@ package com.example.demo1.service;
 
 import java.util.ArrayList;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.demo1.dao.ProductDao;
 import com.example.demo1.dto.ProductDto;
 
 @Service
