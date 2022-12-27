@@ -23,7 +23,7 @@ public class ProductController {
 	@PostMapping("/create")
 	public String createProduct(@RequestBody ProductDto p) {
 		productService.createProduct(p);
-		return "Product Created";
+		return "Product Createdsss";
 	}
 
 	@PutMapping("/update")

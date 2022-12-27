@@ -23,6 +23,8 @@ interface TestInterface2
 public class DefaultAndStaticMethodsExample implements TestInterface2 {
 
 	@Override
+	//Implementation of square of abstract method
+	
 	public void square(int a) {
 		System.out.println("Square of a is :"+a*a);
 	}
