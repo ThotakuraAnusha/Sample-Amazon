@@ -1,5 +1,6 @@
 package com.example.demo1.modal;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +11,12 @@ public class Product {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	
+	@Column
 	private String name;
+	
+	@Column
 	private int price;
 
 	public Product() {

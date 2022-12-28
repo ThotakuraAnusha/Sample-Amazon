@@ -2,16 +2,19 @@ package com.example.demo1.service;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo1.dto.ProductDto;
+import com.example.demo1.modal.Product;
+import com.example.demo1.repository.ProductRepository;
 
 @Service
 public class ProductService {
 	
-	//@Autowired
-	//private ProductDao productDao; 
+	@Autowired
+	private ProductRepository productRepository; 
 
 	private final ArrayList<ProductDto> productList = new ArrayList<ProductDto>();
 
@@ -19,6 +22,10 @@ public class ProductService {
 	public void createProduct(ProductDto productDto) {
 		System.out.println("productDto  -->" + productDto.getName());
 		productList.add(productDto);
+		Product product = new Product();
+		product.setName(productDto.getName());
+		product.setPrice(productDto.getPrice());
+		Product isProductSave = productRepository.save(product);
 		//productDao.createProduct(productDto); 
 	}
 
